@@ -52,7 +52,7 @@ main h2 {
 main p {
     font-size: .75rem;
     font-style: italic;
-    color: rgb(156, 153, 153);
+    color: rgb(80, 79, 79);
     padding-top: 3px;
     border-top: 1px solid black;
 }
