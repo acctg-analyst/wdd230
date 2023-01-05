@@ -11,3 +11,5 @@ let seconds = date.getSeconds();
 let currentDate = `Last Updated: ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`;
 
 updatedDate.textContent = currentDate;
+
+document.querySelector('#currentYear').textContent = `@ ${year} | Cameron M. Taylor | Idaho`
