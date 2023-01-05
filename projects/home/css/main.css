@@ -1,0 +1,83 @@
+header, nav, main, footer {
+    margin: 1.25rem auto;
+    max-width: 400px;
+    font-family:sans-serif;
+}
+
+
+header, footer {
+    background-color: #006EB6;
+    color: #fff;
+    /*border-radius: 5px;*/
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:5px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 10px;
+    
+}
+
+header h1{
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    text-shadow: 0px 10px 10px rgb(41, 40, 40);
+}
+
+header img {
+    background: url(../images/pic-of-me.png) no-repeat;
+    border: 2px solid #006EB6;
+    -moz-box-shadow: 2.5px 2.5px 5px black;
+    -webkit-box-shadow: 2.5px 2.5px 5px black;
+    box-shadow: 2.5px 2.5px 5px black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 5px;
+    
+}
+
+main h2 {
+    padding-bottom:.5em;
+    border-bottom: 1px solid black;
+    text-shadow:1.5px 1.5px 10px black;
+}
+
+main p {
+    font-size: .75rem;
+    font-style: italic;
+    color: rgb(156, 153, 153);
+    padding-top: 3px;
+    border-top: 1px solid black;
+}
+
+main ul li {
+    font-size: 12px;
+    padding:2.5px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+footer #updatedDate {
+    color: yellow;
+}
+
+
+
+
