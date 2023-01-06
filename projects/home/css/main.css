@@ -62,6 +62,16 @@ main ul li {
     padding:2.5px;
 }
 
+
+main ul li a:link {
+    color:darkblue;
+}
+
+main ul li a:hover {
+    color: darkgreen;
+}
+
+
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -77,7 +87,6 @@ footer p {
 footer #updatedDate {
     color: yellow;
 }
-
 
 
 
