@@ -1,0 +1,7 @@
+/*520 pixle width*/
+@media screen and (min-width:32.5em){
+    html{
+        font-size: 1.25em;
+    }
+
+}
