@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Oswald');
+
+/*
+Color Choice
+Dark : 143109
+Medium: AAAE7F
+Light: F7F7F7 */
+
+header, nav, main, footer{
+    font-family: Lato, Owswad, sans-serif;
+    text-align: center;
+}
+
+header, footer{
+    background-color: #143109 ;
+    color: #F7F7F7;
+    padding: .1em;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #F7F7F7;
+}
+
+main section{
+    background-color: #AAAE7F;
+    margin:1em;
+    border: .15em solid black;
+    border-radius: .75em;
+    max-width: 100vw;
+    
+}
+
+main h3{
+    margin:.5em;
+}
+
+main a{
+    color: white;
+}
+
+main img{
+    max-width: 400px;
+    width: 95%;
+    border: .25em solid black;
+    border-radius: .75em;
+}
+
+@media screen and (min-width:32.5em){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    #thirdSection {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (min-width:50.25em){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #thirdSection {
+        grid-column: 3/3;
+    }
+    
+}
