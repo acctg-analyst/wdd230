@@ -38,7 +38,11 @@ main h3{
 }
 
 main a{
-    color: white;
+    color: black;
+}
+
+main a:visited {
+    color: navy;
 }
 
 main img{
