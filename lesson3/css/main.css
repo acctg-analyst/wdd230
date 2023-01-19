@@ -60,6 +60,13 @@ ol {
     text-align: left;
 }
 
+#personas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: .75rem;
+}
+
+
 #primaryColor {
     background-color: #2B4162;
     color: white;
