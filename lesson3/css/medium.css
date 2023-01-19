@@ -1,0 +1,14 @@
+@media screen and (min-width:50em){
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        background-color: #D7B377;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+    #content p {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
