@@ -48,6 +48,8 @@ nav ul li a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    padding: 20px 60px 20px 60px;
+    border-radius: 1rem;
 }
 
 img {
@@ -59,11 +61,8 @@ h2 {
     padding: 1rem;
 }
 
-nav ul li:hover {
+nav ul li:hover a {
     background-color: #2B4162;
-}
-
-nav ul li a:hover {
     color: #D7B377;
 }
 
