@@ -4,14 +4,21 @@ Seconary/#D7B377
 Accent1/#90A9B7
 Accent2/#A0d2DB
 */
+
+/*General CSS for the different pages*/ 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Playfair Display' , sans-serif;
+}
+
 body {
     background-color: #2B4162;
-    text-align: center;
-    font-family: 'Playfair Display' , sans-serif;
-    padding: 1.25rem;
+    padding: 1rem;
 }
 
 #content {
@@ -29,12 +36,27 @@ nav ul{
     list-style-type: none;
     background-color: #D7B377;
     border-radius: 1rem;
-    margin-top: 1rem;
 }
 
 nav ul li {
     font-size: 1.25em;
     padding: 20px 60px 20px 60px;
+    border-radius: 1rem;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+h2 {
+    padding: 1rem;
 }
 
 nav ul li:hover {
@@ -45,46 +67,45 @@ nav ul li a:hover {
     color: #D7B377;
 }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-img {
-    width: 200px;
-    height: auto;
-}
-
-ol {
-    margin-left:35%;
-    text-align: left;
-}
+/*this is the start of css specific to certain pages.*/
 
 #personas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-top: .75rem;
 }
 
+#personas p {
+    padding-bottom: 1.5rem;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+#colorScheme h3,h2,p {
+    padding-bottom: 1rem;
+}
 
 #primaryColor {
     background-color: #2B4162;
-    color: white;
+    color: #F5F5F5;
 }
 
 #secondaryColor {
     background-color: #D7B377;
-    color: white;
+    color: black;
 }
 
 #accent1Color {
     background-color: #90A9B7;
-    color: white;
+    color: black;
 }
 
 #accent2Color {
     background-color: #A0d2DB;
-    color: white;
+    color: black;
 }
 
 #colorScheme h3 {

@@ -8,3 +8,6 @@ let currentDate = `Last Updated: ${document.lastModified}`
 updatedDate.textContent = currentDate;
 
 document.querySelector('#currentYear').innerHTML = `&copy ${year} .:|:. Cameron M. Taylor .:|:. Idaho`
+
+
+
