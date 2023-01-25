@@ -1,6 +1,6 @@
 //1. Selecting an element
 const h1 = document.querySelector('#mainHeading');
-h1. innerText = "Hello Class";
+// h1. innerText = "Hello Class";
 
 
 //2. Creat/Edit/Add
@@ -9,10 +9,10 @@ h1. innerText = "Hello Class";
 // document.body.appendChild(p);
 
 //3. Removing elements from the body
-// document.querySelector('h1').remove();
+//document.querySelector('h1').remove();
 
 //4. Adding Style to the documet
-// p.style.color = "red";
+//p.style.color = "red";
 
 //5. Adding Event Listeners
 // const btn = document.createElement('button');
