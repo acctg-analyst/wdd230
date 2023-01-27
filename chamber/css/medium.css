@@ -1,4 +1,10 @@
-@media screen and (min-width:650px){
+@media screen and (min-width:600px){
+
+    nav a{
+        display:none;
+    }
+
+
 /* fixing the main section to fit better with example layout */
     main{
         display:grid;
