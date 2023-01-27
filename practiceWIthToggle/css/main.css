@@ -1,0 +1,53 @@
+.newstyle {
+    background-color: red;
+}
+
+/* hamburger menu / responsive menu*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    display: none;
+    padding: 15px;
+    background-color: #eee;
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+a:first-child {
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+.responsive a {
+    display: block;
+}
+
+.responsive a:first-child {
+    border-radius: 0px;
+}
+
+@media screen and (min-width: 650px) {
+    a:first-child {
+        display: none;
+    }
+
+    a {
+        display: block;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+}
