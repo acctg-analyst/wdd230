@@ -36,8 +36,6 @@
     }
 
     nav a:hover {
-        background-color: none;
-        color: none;
         border-bottom: 1px solid white;
 
     }
@@ -140,7 +138,7 @@
         justify-content: right;
     }
 
-    footer div:nth-child(3) ul p {
+    footer div:nth-child(3) ul li {
         border-right: .5px solid black;
         font-size: .85em;
 
