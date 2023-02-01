@@ -13,6 +13,11 @@
     main #Hero {
         grid-column: 1/3;
         grid-row: 1/2;
+        
+    }
+
+    #Hero img{
+        margin-top:-300px;
     }
 
     main #NewRelease {
