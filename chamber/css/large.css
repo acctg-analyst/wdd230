@@ -25,7 +25,7 @@
 
     nav {
         display: flex;
-
+        border:none;
     }
 
     nav a {
@@ -124,19 +124,20 @@
     #Spotlights div {
         height: auto;
         width: auto;
+        
     }
 
     #Spotlights div:nth-child(1) {
-        margin:0;
+        margin:10px 5px 5px 5px;
     }
 
     #Spotlights div:nth-child(2) {
-        margin:0;
+        margin:5px 5px 5px 5px;
     }
     
     #Spotlights div:nth-child(3) {
         display: block;
-        margin:0px, 5px, 10px, 5px;
+        margin:5px 5px 10px 5px;
     }
 
     /* finally the footer */

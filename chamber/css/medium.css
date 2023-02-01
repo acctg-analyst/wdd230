@@ -33,11 +33,11 @@
     }
 
     #Spotlights div:nth-child(1){
-        margin:0;
+        margin:5px;
         height:auto;
     }
     #Spotlights div:nth-child(2){
-        margin:0;
+        margin:5px;
         height:auto;
     }
 
