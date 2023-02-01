@@ -32,15 +32,27 @@
         padding: 10px 5px 10px 5px;
     }
 
-    #Spotlights div {
-        margin: 0px 3px 0px 3px;
-
+    #Spotlights div:nth-child(1){
+        margin:0;
+        height:auto;
     }
+    #Spotlights div:nth-child(2){
+        margin:0;
+        height:auto;
+    }
+
+    
 
 
     main #Join {
+        display:block;
         grid-column: 1/3;
         grid-row: 4/5;
+    }
+
+    #Weather {
+        max-width: 100%;
+        margin: 5px;
     }
 
     /* fixing the footer to better math the example */

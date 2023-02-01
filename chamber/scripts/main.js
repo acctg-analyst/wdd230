@@ -21,6 +21,15 @@ console.log(year);
 
 document.querySelector('#currentYear').innerHTML = `&copy;${year} Treasure Valley Chamber `
 
+console.log(date.getDay());
+
+if (date.getDay() == 1 | date.getDay() == 2){
+    const meetingAlert = document.createElement('p');
+    meetingAlert.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
+    const banner = document.querySelector('#banner');
+    banner.appendChild(meetingAlert);
+};
+
 
 // when hamburger is hit
 

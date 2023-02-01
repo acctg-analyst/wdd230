@@ -77,6 +77,8 @@
         grid-template-rows: 1fr 1fr 1fr;
     }
 
+
+
     main #Event {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -95,6 +97,13 @@
     main #Hero {
         grid-column: 2/3;
         grid-row: 1/3;
+        max-height: 500px;
+    }
+
+    main #Hero img {
+        
+        margin-top:-100px;
+        margin-right: 200px;
     }
 
     main #NewRelease {
@@ -109,6 +118,7 @@
         grid-template-columns: 1fr;
         height: auto;
         width: auto;
+        max-height:none;
     }
 
     #Spotlights div {
@@ -116,8 +126,17 @@
         width: auto;
     }
 
-    main section div:nth-child(3) {
+    #Spotlights div:nth-child(1) {
+        margin:0;
+    }
+
+    #Spotlights div:nth-child(2) {
+        margin:0;
+    }
+    
+    #Spotlights div:nth-child(3) {
         display: block;
+        margin:0px, 5px, 10px, 5px;
     }
 
     /* finally the footer */
