@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/large.css" />
     <link rel="stylesheet" href="css/extrasmall.css" />
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 
     <header>
         <div id="logoName">
-            <img src="images/logo.png" alt="logo" />
+            <img src="images/logo.webp" alt="logo" />
             <p>Treasure Valley <br /><span>Chamber of Commerce</span></p>
         </div>
         <div id="rightSideHeader">
@@ -44,8 +45,12 @@
 
     <main>
         <section id="Hero">
-            <img src="images/BoiseValley.png" alt="A picture of the city Boise in Idaho.">
-            <p>Welcome to Boise</p>
+            <picture>
+                <source srcset="images/BoiseValley934t.png" media="(min-width: 600px) and
+                (max-width: 939px)">
+                <source srcset="images/BoiseValleyLarget.png" media="(min-width: 940px)">
+                <img src="images/BoiseValley600t.png" alt="A picture of the city Boise in Idaho.">
+            </picture>
             <button>Join the Chamber</button>
         </section>
         <section id="Event">
@@ -64,7 +69,7 @@
             <img src="images/weather.png" alt="little cloud and sun">
             <p id="temperature"><span>0</span>°F</p>
             <p id="weatherDiscription"> Winter Storm</p>
-            <p id="windSpeed">Wind Speed: <span>2.5</span> mph</p>
+            <p id="windSpeed">Wind Speed: <span>4</span> mph</p>
             <p id="windChill">Wind Chill: <span>5</span>°F</p>
         </section>
         <section id="NewRelease">

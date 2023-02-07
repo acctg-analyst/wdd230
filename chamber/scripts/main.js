@@ -16,12 +16,12 @@ lastModified.textContent = `Last Modification: ${document.lastModified}`
 
 const date = new Date();
 let year = date.getFullYear();
-console.log(year);
+
 
 
 document.querySelector('#currentYear').innerHTML = `&copy;${year} Treasure Valley Chamber `
 
-console.log(date.getDay());
+
 
 if (date.getDay() == 1 | date.getDay() == 2){
     const meetingAlert = document.createElement('p');
