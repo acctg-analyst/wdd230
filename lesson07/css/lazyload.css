@@ -1,0 +1,21 @@
+/* picture img{
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+} */
+
+h1 {
+    text-align: center;
+}
+
+img[data-src]{
+    filter: blurr(0.2em);
+}
+
+img {
+    display:block;
+    margin:0 auto;
+    padding: 5px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
