@@ -1,3 +1,14 @@
+if (!localStorage.getItem('lastVisit')) {
+    localStorage.setItem('lastVisit',Date.now());
+    document.querySelector('#Days').textContent = 'Welcome!';
+}else{
+    let currDate = Date.now();
+    let lastvisited = localStorage.getItem('lastVisit');
+    let diff = Math.round((currDate - lastvisited)/1000/60/60/24,2);
+    document.querySelector('#diff').textContent = diff
+}
+
+
 
 //This is to select all of the images on the screen
 let images = document.querySelectorAll("[data-src]");

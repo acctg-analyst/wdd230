@@ -47,7 +47,7 @@ hamburger.addEventListener('click', () => {
         navDiv.appendChild(navBar);
 
         const a1 = document.createElement('a');
-        a1.setAttribute("href", "#");
+        a1.setAttribute("href", "discover.html");
         a1.textContent = "Discover";
         navBar.appendChild(a1);
 
@@ -83,7 +83,7 @@ function reportWindowSize() {
         navDiv.appendChild(navBar);
 
         const a1 = document.createElement('a');
-        a1.setAttribute("href", "#");
+        a1.setAttribute("href", "discover.html");
         a1.textContent = "Discover";
         navBar.appendChild(a1);
 
@@ -115,14 +115,3 @@ window.addEventListener('DOMContentLoaded', reportWindowSize);
 
 
 
-// storage local and session
-
-if (!localStorage.getItem('lastVisit')) {
-    localStorage,setItem('lastVisit',Date.now());
-    document.querySelector('#Days').textContent = 'Welcome!';
-}else{
-    let currDate = Date.now();
-    let lastvisited = localStorage.getItem('lastVisit');
-    let diff = (currDate - lastvisited)/1000/60/60/24;
-    document.querySelector('#diff').textContent = diff
-}

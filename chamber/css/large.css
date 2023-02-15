@@ -100,11 +100,6 @@
         max-height: 100%;
     }
 
-    main #Hero img {
-        
-        /* margin-top:-50px;
-        margin-right: 200px; */
-    }
 
     main #NewRelease {
         grid-column: 2/3;
@@ -138,6 +133,12 @@
     #Spotlights div:nth-child(3) {
         display: block;
         margin:5px 5px 10px 5px;
+    }
+
+    /* Main css for discovery page */
+
+    main#dis_main section picture:hover{
+        box-shadow: 0 0 20px #90A9B7;
     }
 
     /* finally the footer */

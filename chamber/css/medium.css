@@ -16,9 +16,6 @@
         
     }
 
-    #Hero img{
-        /* margin-top:-300px; */
-    }
 
     main #NewRelease {
         grid-column: 1/3;
@@ -58,6 +55,13 @@
     #Weather {
         max-width: 100%;
         margin: 5px;
+    }
+
+
+    /* main that only applies to discovery page */
+
+    main#dis_main section picture img:hover{
+        box-shadow: 0 0 20px #90A9B7;
     }
 
     /* fixing the footer to better math the example */
