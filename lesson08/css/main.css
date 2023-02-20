@@ -1,0 +1,58 @@
+:root {
+	--back: hsla(150, 50%, 30%, 1);
+    --back2: hsla(150, 50%, 30%, .5);
+    --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,93%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid rgba(0,0,0,.2);
+	/* box-shadow: 0 0 7px var(--shadow); */
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 0;
+    caption-side: bottom;
+    color: black;
+	font-size: .9rem;
+}
+
+thead tr:first-child th {
+	background-color: black;
+	color: white;
+}
+
+thead tr:nth-child(2) th:first-child{
+    background-color: black;
+    
+}
+
+tbody tr td:first-child {
+    font-weight: bolder;
+}
+
+th, td {
+	padding: 7px 15px;
+}
+
+th {
+	background-color: rgb(87, 87, 87);
+    color: white;
+	font-size: larger;
+    border: 1px solid black;
+}
+
+td {
+	text-align: center;
+    border: 1px solid rgba(201, 201, 201, 0.644);
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(245, 243, 243);
+}
