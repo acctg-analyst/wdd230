@@ -414,12 +414,13 @@ main#join form label.top {
     padding-top: 1rem;
 }
 
-form label.top input, form label.top select, form textarea {
+form label.top input, form textarea {
     display: block;
     border-radius: 8px;
     padding: .75rem;
     width: 90%;
     max-width: 20rem;
+    border: 0px;
 }
 
 form label.sbs {
@@ -446,6 +447,7 @@ form .submitBtn {
     font-weight: bolder;
     font-size: 1.2rem;
     margin-bottom: 100px;
+    border:0px;
 }
 form .submitBtn:hover {
     cursor: pointer;
