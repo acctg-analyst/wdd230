@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="The Treasure Valley Chamber of Commerce home page. This is the page for Boise, Idaho." />
+    <title>Chamber of Commerce Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/extrasmall.css" />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <div id="banner"></div>
+
+    <header>
+        <div id="logoName">
+            <img src="images/logo.webp" alt="logo" />
+            <p>Treasure Valley <br /><span>Chamber of Commerce</span></p>
+        </div>
+        <div id="rightSideHeader">
+            <div id="socialMedia">
+                <a href="https://www.facebook.com/boisemetrochamber" target="_blank"><img src="images/fbsmall.png"
+                        alt="facebook tag" /></a>
+                <a href="https://www.linkedin.com/company/boisechamber/" target="_blank"><img src="images/lknsmall.png"
+                        alt="linkedIn tag" /></a>
+            </div>
+            <a class="ham" href="#">&#9776;</a>
+        </div>
+        <div id="navContainer">
+        </div>
+        <p id="today"></p>
+    </header>
+
+
+
+    <main id="join">
+        <h1>Join The Commerce</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Applicant Information
+                </legend>
+
+                <label class="top">
+                    First Name<span> *</span> 
+                    <input type="text" name="fname" required>
+                </label>
+
+                <label class="top">
+                    Last Name<span> *</span> 
+                    <input type="text" name="lname" required>
+                </label>
+
+                <label class="top">
+                    Job Title 
+                    <input type="text" name="title" pattern = "[a-z?A-Z?
+                        ?-]*" minlength="7">
+                </label>
+
+                <label class="top">
+                    Email<span> *</span> 
+                    <input type="email" name="email" placeholder="someone@gmail.com"
+                        required>
+                </label>
+
+                <label class="top">
+                    Phone<span> *</span> 
+                    <input type="tel" name="phone" required>
+                </label>
+
+                <label class="top">
+                    Business Name<span> *</span> 
+                    <input type="text" name="business" required>
+                </label>
+            </fieldset>
+
+            <section class="membership">
+                <fieldset>
+                    <legend>
+                        Membership Level
+                    </legend>
+
+                    <label class="sbs">
+                        <input type="radio" name="membership" value="np">
+                        NP Membership
+                    </label>
+
+                    <label class="sbs">
+                        <input type="radio" name="membership" value="bronze">
+                        Bronze Membership
+                    </label>
+
+                    <label class="sbs">
+                        <input type="radio" name="membership" value="advanced">
+                        Silver Membership
+                    </label>
+
+                    <label class="sbs">
+                        <input type="radio" name="membership" value="gold">
+                        Gold Membership
+                    </label>
+                </fieldset>
+
+                <table>
+                    <caption>Table 1: Account Feature Comparison</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="5" scope="colgroup">
+                                Boise Chamber Of Commerce
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">NP Membership</th>
+                            <th scope="col">Bronze Membership</th>
+                            <th scope="col">Siver Membership</th>
+                            <th scope="col">Gold Membership</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Annual Fee</td>
+                            <td>❌</td>
+                            <td>$ 100.00</td>
+                            <td>$ 500.00</td>
+                            <td>$ 1,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Free Ads Per Year</td>
+                            <td>❌</td>
+                            <td>1 Free Ad</td>
+                            <td>2 Free Ad</td>
+                            <td>4 Free Ad</td>
+                        </tr>
+                        <tr>
+                            <td>Votes</td>
+                            <td>❌</td>
+                            <td>1 vote</td>
+                            <td>1 vote</td>
+                            <td>1 vote</td>
+                        </tr>
+                        <tr>
+                            <td>Tickets per Event</td>
+                            <td>2 Tickets</td>
+                            <td>4 Tickets</td>
+                            <td>6 Tickets</td>
+                            <td>10 Tickets</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </section>
+            <fieldset>
+                <legend>
+                    Describe Your Business
+                </legend>
+
+                <label class="top">
+                    Give us some details about your business: 
+                    <textarea name="description" rows="10"></textarea>
+                ></label>
+
+                <label class="top date">
+                    <input class="datetime" type="date" name="completeDate">
+                </label>
+            </fieldset>
+            <input type="submit" value="Apply for Membership" class="submitBtn">
+        </form>
+    </main>
+
+
+    <footer>
+        <div>
+            <img src="images/logo.webp" alt="logo image" />
+            <p>
+                <strong>Treasure Valley Chamber of Commerce</strong> <br />1122 Boogie Boogie Ave
+                <br />Boise, ID 88333
+            </p>
+        </div>
+        <div>
+            <p>info@treasurevalley.org</p>
+            <p>+(208) 111-2222</p>
+            <div id="mapIcon">
+                <a href="https://goo.gl/maps/qvak68ZojGrBFnwLA" target="_blank"><i
+                        class="material-icons">&#xe55e;</i></a>
+                <p>Location</p>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li id="currentYear"></li>
+                <li><strong>Cameron Taylor</strong></li>
+                <li>WDD 230 Project</li>
+            </ul>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

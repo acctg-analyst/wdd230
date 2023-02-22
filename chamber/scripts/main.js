@@ -47,24 +47,29 @@ hamburger.addEventListener('click', () => {
         navDiv.appendChild(navBar);
 
         const a1 = document.createElement('a');
-        a1.setAttribute("href", "discover.html");
-        a1.textContent = "Discover";
+        a1.setAttribute("href", "index.html");
+        a1.textContent = "Home";
         navBar.appendChild(a1);
 
         const a2 = document.createElement('a');
-        a2.setAttribute("href", "#");
-        a2.textContent = "Directory";
+        a2.setAttribute("href", "discover.html");
+        a2.textContent = "Discover";
         navBar.appendChild(a2);
 
         const a3 = document.createElement('a');
         a3.setAttribute("href", "#");
-        a3.textContent = "Join";
+        a3.textContent = "Directory";
         navBar.appendChild(a3);
 
         const a4 = document.createElement('a');
-        a4.setAttribute("href", "#");
-        a4.textContent = "Contact";
+        a4.setAttribute("href", "join.html");
+        a4.textContent = "Join";
         navBar.appendChild(a4);
+
+        const a5 = document.createElement('a');
+        a5.setAttribute("href", "#");
+        a5.textContent = "Contact";
+        navBar.appendChild(a5);
 
     }
 
@@ -75,7 +80,7 @@ hamburger.addEventListener('click', () => {
 });
 
 function reportWindowSize() {
-    if (window.innerWidth >= 940 && !(document.querySelector('#navContainer').classList.contains('on'))) {
+    if (window.innerWidth >= 956 && !(document.querySelector('#navContainer').classList.contains('on'))) {
         document.querySelector('#navContainer').classList.toggle('on');
         document.querySelector('#navContainer').classList.toggle('large');
         const navDiv = document.querySelector('#navContainer');
@@ -83,26 +88,31 @@ function reportWindowSize() {
         navDiv.appendChild(navBar);
 
         const a1 = document.createElement('a');
-        a1.setAttribute("href", "discover.html");
-        a1.textContent = "Discover";
+        a1.setAttribute("href", "index.html");
+        a1.textContent = "Home";
         navBar.appendChild(a1);
 
         const a2 = document.createElement('a');
-        a2.setAttribute("href", "#");
-        a2.textContent = "Directory";
+        a2.setAttribute("href", "discover.html");
+        a2.textContent = "Discover";
         navBar.appendChild(a2);
 
         const a3 = document.createElement('a');
         a3.setAttribute("href", "#");
-        a3.textContent = "Join";
+        a3.textContent = "Directory";
         navBar.appendChild(a3);
 
         const a4 = document.createElement('a');
-        a4.setAttribute("href", "#");
-        a4.textContent = "Contact";
+        a4.setAttribute("href", "join.html");
+        a4.textContent = "Join";
         navBar.appendChild(a4);
+
+        const a5 = document.createElement('a');
+        a5.setAttribute("href", "#");
+        a5.textContent = "Contact";
+        navBar.appendChild(a5);
     }
-    else if (window.innerWidth < 940 && document.querySelector('#navContainer').classList.contains('on') && document.querySelector('#navContainer').classList.contains('large')) {
+    else if (window.innerWidth < 956 && document.querySelector('#navContainer').classList.contains('on') && document.querySelector('#navContainer').classList.contains('large')) {
         document.querySelector('#navContainer').classList.toggle('on');
         document.querySelector('#navContainer').classList.toggle('large');
         document.querySelector('nav').remove()

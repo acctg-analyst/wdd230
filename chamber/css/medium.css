@@ -64,6 +64,20 @@
         box-shadow: 0 0 20px #90A9B7;
     }
 
+
+    /* main that only applies to join page */
+
+    main#join {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main#join form textarea {
+        max-width: 100%;
+    }
+
+    
+
     /* fixing the footer to better math the example */
 
 
