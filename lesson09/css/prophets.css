@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+h1,h2 {
+    color: navy;
+}
+
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.cards section {
+    border: 1px solid navy;
+    background-color: rgb(226, 201, 248);
+    padding: 15px;
+    width: 300px;
+    margin: 5px;
+}
+
+.cards img {
+    width: 90%;
+    height: auto;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
