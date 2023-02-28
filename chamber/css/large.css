@@ -216,7 +216,7 @@
 
     /* main that applies to directory */
     main#directory div.table section{
-        display:felx;
+        display:flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
