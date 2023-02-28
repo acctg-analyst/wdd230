@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="The Treasure Valley Chamber of Commerce home page. This is the page for Boise, Idaho." />
+    <title>Chamber of Commerce Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/extrasmall.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <!-- <script src="scripts/windchill.js" defer></script> -->
+</head>
+
+<body>
+    <div id="banner"></div>
+
+    <header>
+        <div id="logoName">
+            <img src="images/logo.webp" alt="logo" />
+            <p>Treasure Valley <br /><span>Chamber of Commerce</span></p>
+        </div>
+        <div id="rightSideHeader">
+            <div id="socialMedia">
+                <a  href="https://www.facebook.com/boisemetrochamber" target="_blank"><img
+                        src="images/fbsmall.png" alt="facebook tag" /></a>
+                <a  href="https://www.linkedin.com/company/boisechamber/" target="_blank"><img
+                        src="images/lknsmall.png" alt="linkedIn tag" /></a>
+            </div>
+            <a class="ham" href="#">&#9776;</a> 
+        </div>
+        <div id="navContainer">
+        </div>
+        <p id="today"></p>
+    </header>
+
+    
+
+    <main id="directory">
+        <h2>Business Directory</h2>
+        <div class="icons">
+            <a href="#" class="cardsIcon"><i class="fa fa-table" style="font-size:36px" ></i></a>
+            <a href="#" class="tableIcon"><i class="fa fa-address-card" style="font-size:33px" ></i></a>
+        </div>
+        <div class="c cards"></div>
+
+        <div class="t hide">
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <img src="images/logo.webp" alt="logo image" />
+            <p>
+                <strong>Treasure Valley Chamber of Commerce</strong> <br />1122 Boogie Boogie Ave
+                <br />Boise, ID 88333
+            </p>
+        </div>
+        <div>
+            <p>info@treasurevalley.org</p>
+            <p>+(208) 111-2222</p>
+            <div id="mapIcon">
+                <a href="https://goo.gl/maps/qvak68ZojGrBFnwLA"
+                    target="_blank"><i class="material-icons">&#xe55e;</i></a>
+                <p>Location</p>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li id="currentYear"></li>
+                <li><strong>Cameron Taylor</strong></li>
+                <li>WDD 230 Project</li>
+            </ul>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

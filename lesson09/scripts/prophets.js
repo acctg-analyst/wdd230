@@ -1,5 +1,5 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
-
+//const url = 'https://run.mocky.io/v3/b74a6dc4-31af-4ec5-8fa6-280f29e35901';
 async function getProphetData() {
     const response = await fetch(url);
     const data = await response.json();

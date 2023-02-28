@@ -479,6 +479,113 @@ main#thanks h1, main#thanks p {
 }
 
 
+/* looking at the directory page */
+main#directory {
+    display:block;
+}
+
+main#directory h2{
+    color:#D7B377;
+    padding:0;
+    margin:10px 0;
+    text-align: center;
+}
+
+main#directory div.icons{
+    display:flex;
+    justify-content: center;
+    grid-gap: 15px;
+}
+
+main#directory i {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+main#directory i:hover {
+    cursor: pointer;
+}
+
+main#directory a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+main#directory div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main#directory div.cards section img{
+    max-width: 150px;
+    max-height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main#directory div.cards section{
+    background-color: #D7B377;
+    padding: 15px;
+    Margin: 15px;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    box-shadow: 5px 5px 8px 5px #90A9B7;
+}
+
+
+
+main#directory div.cards section a:visited {
+    color:rgb(48, 66, 18);
+}
+
+main#directory div.cards section a, main#directory div.cards section p {
+    color:black;
+    padding:5px;
+    margin:0;
+    text-decoration: none;
+}
+
+/* ------------------------------ */
+main#directory div.table{
+    display: flex;
+    flex-direction: column;
+}
+
+main#directory div.table section{
+    display: flex;
+    flex-direction: column;
+    background-color: #2B4162;
+    color:white;
+    font-weight: bolder;
+    text-align: left;
+    min-height:0;
+    height:100px;
+    width:95%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 0;
+}
+
+main#directory div.table section:nth-child(odd){
+    background-color: #90A9B7;
+    color:black;
+}
+
+main#directory div.table section p{
+    padding:2px;
+    margin:auto 0;
+}
+
+main#directory div.hide {
+    display:none;
+}
 
 /* looking at the footer layout of the page */
 

@@ -57,7 +57,7 @@ hamburger.addEventListener('click', () => {
         navBar.appendChild(a2);
 
         const a3 = document.createElement('a');
-        a3.setAttribute("href", "#");
+        a3.setAttribute("href", "directory.html");
         a3.textContent = "Directory";
         navBar.appendChild(a3);
 
@@ -98,7 +98,7 @@ function reportWindowSize() {
         navBar.appendChild(a2);
 
         const a3 = document.createElement('a');
-        a3.setAttribute("href", "#");
+        a3.setAttribute("href", "directory.html");
         a3.textContent = "Directory";
         navBar.appendChild(a3);
 
