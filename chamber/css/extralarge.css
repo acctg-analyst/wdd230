@@ -1,0 +1,21 @@
+@media screen and (min-width:1250px) {
+
+
+    main#directory div.table section {
+        display: grid;
+        grid-template-columns: 250px 500px 150px 250px;
+        text-align: left;
+    }
+
+    main#directory div.table section p:last-child {
+        border: none;
+    }
+
+    main#directory div.table section p {
+        border-right: 1px solid white;
+        padding: 20px 12px;
+    }
+
+
+
+}

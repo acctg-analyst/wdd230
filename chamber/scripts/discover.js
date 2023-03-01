@@ -16,7 +16,7 @@ let images = document.querySelectorAll("[data-src]");
 
 // This is to emphize the lazy loading process
 const imgOptions = {
-    threshold: .5
+    threshold: 0
     // rootMargin: "0px 0px -100px 0px"
 };
 

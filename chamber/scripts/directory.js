@@ -20,6 +20,7 @@ const displayBusinessCards = (businesses) => {
 
     businesses.forEach((business) => {
         let card = document.createElement('section');
+        let div = document.createElement('div');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
@@ -34,10 +35,13 @@ const displayBusinessCards = (businesses) => {
         website.textContent = `${business.website}`;
         website.setAttribute('href', `${business.website}`)
         
+        div.appendChild(address);
+        div.appendChild(phone);
+        div.appendChild(website);
+
+
         card.appendChild(picture);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
+        card.appendChild(div);
         
 
         cardDiv.appendChild(card);

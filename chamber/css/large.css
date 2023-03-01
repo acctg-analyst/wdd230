@@ -215,11 +215,6 @@
     }
 
     /* main that applies to directory */
-    main#directory div.table section{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
 
     /* finally the footer */
 

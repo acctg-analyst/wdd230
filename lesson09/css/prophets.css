@@ -6,6 +6,18 @@ h1,h2 {
     color: navy;
 }
 
+#views{
+    text-align: center;
+    font-size: 3em;
+    
+
+}
+
+#views span{
+    border: 5px solid black;
+
+}
+
 .cards {
     display:flex;
     flex-wrap:wrap;
@@ -25,4 +37,43 @@ h1,h2 {
     width: 90%;
     height: auto;
     box-shadow: 5px 10px 8px 5px #888888;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 75%;
+}
+
+table td{
+    
+    display: block;
+    padding:2.5px;
+    font-size:1.2em;
+    
+}
+
+table tr{
+
+    width: 200px;
+}
+
+
+footer {
+    text-align: center;
+}
+
+table tr:nth-child(odd){
+    background-color: rgb(167, 167, 195);
+}
+
+@media screen and (min-width:600px){
+    table td{
+        border: thin solid black;
+        display: table-cell;
+        padding:5px  50px;
+        
+    }
+
 }

@@ -4,7 +4,7 @@ async function getProphetData() {
     const response = await fetch(url);
     const data = await response.json();
     //console.table(data.prophets);
-    displayProphets(data.prophets);
+    displayTable(data.prophets);
 }
   
 getProphetData();
@@ -39,3 +39,25 @@ const displayProphets = (prophets) => {
     })
 }
 
+
+const displayTable = (prophets) => {
+    const table = document.querySelector('table');
+
+    prophets.forEach((prophet) => {
+        let tr = document.createElement('tr');
+        let td_name = document.createElement('td');
+        let td_birthplace = document.createElement('td');
+        let td_birthdate = document.createElement('td');
+
+        td_name.textContent = `${prophet.name}`;
+        td_birthdate.textContent = `${prophet.birthdate}`; 
+        td_birthplace.textContent = `${prophet.birthplace}`;
+
+        tr.appendChild(td_name);
+        tr.appendChild(td_birthdate);
+        tr.appendChild(td_birthplace);
+
+        table.appendChild(tr);
+
+    })
+}

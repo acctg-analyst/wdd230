@@ -535,8 +535,19 @@ main#directory div.cards section{
     Margin: 15px;
     text-align: center;
     width: 350px;
-    height: auto;
+    height: 250px;
+    min-height:0px;
     box-shadow: 5px 5px 8px 5px #90A9B7;
+    position: relative;
+}
+
+
+
+main#directory div.cards section div {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left:0;
 }
 
 
@@ -564,13 +575,13 @@ main#directory div.table section{
     background-color: #2B4162;
     color:white;
     font-weight: bolder;
-    text-align: left;
+    text-align: center;
     min-height:0;
-    height:100px;
+    height:auto;
     width:95%;
     margin: 0 auto;
-    padding: 10px;
     border-radius: 0;
+    padding:0;
 }
 
 main#directory div.table section:nth-child(odd){
@@ -579,7 +590,8 @@ main#directory div.table section:nth-child(odd){
 }
 
 main#directory div.table section p{
-    padding:2px;
+    padding:2.5px;
+    /* height: 10px; */
     margin:auto 0;
 }
 
