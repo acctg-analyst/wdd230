@@ -28,7 +28,7 @@ const displayBusinessCards = (businesses) => {
         
         picture.setAttribute('src', `${business.image}`);
         picture.setAttribute('alt', `logo for ${business.name}`);
-        //picture.setAttribute('loading', 'lazy');
+        picture.setAttribute('loading', 'lazy');
         address.textContent = `${business.address}`;
         phone.textContent = `${business.phone}`;
         website.textContent = `${business.website}`;
