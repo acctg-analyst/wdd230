@@ -430,7 +430,7 @@ form label.sbs {
 }
 
 
-main#join form fieldset label.date input {
+main#join form .datetime {
     display:none;
 }
 
