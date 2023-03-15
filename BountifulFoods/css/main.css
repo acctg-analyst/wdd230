@@ -71,6 +71,10 @@ div.navSection.open a.mainNav:hover{
     border-radius: 1rem;
 }
 
+div.navSection.open div {
+    margin-top: 20px;
+}
+
 
 
 
