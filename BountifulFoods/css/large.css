@@ -1,0 +1,13 @@
+@media screen and (min-width:1050px) {
+    body div#cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    body div#cards section#drinks {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}

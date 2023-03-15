@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
     <script src="scripts/main.js" defer></script>
 </head>
 
@@ -26,51 +28,84 @@
         </div>
     </div>
 
+    <div id="body">
+        <p id="today"></p>
+        <header>
+            <div>
+                <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" /></a>
+                <p>Bountiful Foods</p>
+                <div>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+            <div id="navDiv">
+                <a id="hamburger" class="fa fa-bars" href="#"></a>
+            </div>
+            <div id="navContainer">
+                <a href="#">Home</a>
+                <a href="#">Fresh</a>
+                <a href="#">About Us</a>
+            </div>
+        </header>
 
-    <header>
-        <div>
+
+
+        <img id="hero" src="images/hero.jpg" alt="assortment of fruits">
+        <div id="cards">
+            <section>
+                <h2>Carlsbad, California</h2>
+                <p>Carlsbad is known for its splendid oceanfront beaches. Home to one of the most
+                    tempered climates, it is a wonderful place to live and vacation. Come and visit our
+                    sprawling beaches with amazing weather and grab a drink to enjoy.</p>
+            </section>
+            <section id="weather">
+
+                <img id="weatherIcon" src="#" alt="#">
+                <div class="currentW">
+                    <p id="conditions"></p>
+                    <p id="temp">Temperature: <span></span>°F</p>
+                    <p id="humid">Humidity: <span></span>%</p>
+                </div>
+                <div class="futureW">
+                    <p id="forcastHeading"><strong>3 Day Forecast</strong></p>
+                    <p id="temp1">Day1: <span></span>°F</p>
+                    <p id="temp2">Day2: <span></span>°F</p>
+                    <p id="temp3">Day3: <span></span>°F</p>
+                </div>
+            </section>
+            <section id="drinks">
+                <a href="#">Make a custom drink! Click Here!</a>
+                <h2>Drinks you've ordered</h2>
+                <h2 id="numDrinks">0</h2>
+                <button>Reset</button>
+            </section>
+        </div>
+
+        <footer>
             <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" /></a>
-            <p>Bountiful Foods</p>
+            <p class="companyName">Bountiful Foods</p>
+            <div class="companyContact">
+                <p>(818) 456-7890</p>
+                <p>BountifulFreshFoods.com</p>
+                <p>1122 Fruity Ave. <br> Carlbas, CA 90011</p>
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+            </div>
             <div>
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-twitter"></a>
             </div>
-        </div>
-        <div id="navDiv">
-            <span class="collapsed"><a class="fa fa-bars" href="#"></a></span>
-        </div>
-        <div id="navContainer"></div>
-    </header>
 
-
-
-    <p id="today"></p>
-
-
-
-    <footer>
-        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" /></a>
-        <p class="companyName">Bountiful Foods</p>
-        <div class="companyContact">
-            <p>(818) 456-7890</p>
-            <p>BountifulFreshFoods.com</p>
-            <p>1122 Fruity Ave. <br> Carlbas, CA 90011</p>
-            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-        </div>
-        <div>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-twitter"></a>
-        </div>
-
-        <div>
-            <p>&copy; 2023</p>
-            <p>Cameron Taylor</p>
-            <p>WDD 230 Final Project</p>
-            <p>Last Modified: </p>
-        </div>
-    </footer>
+            <div>
+                <p id="currentYear"></p>
+                <p>Cameron Taylor</p>
+                <p>WDD 230 Final Project</p>
+                <p id="lastModified">Last Modified: </p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
