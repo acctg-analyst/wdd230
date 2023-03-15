@@ -65,11 +65,13 @@ body.openNav #body  {
     display:none;   
 }
 
-div.navSection.open a:not(:first-child):not(:last-child):hover{
+div.navSection.open a.mainNav:hover{
     background-color: #B2D2A4;
     color: #1a4314;
     border-radius: 1rem;
 }
+
+
 
 
 
