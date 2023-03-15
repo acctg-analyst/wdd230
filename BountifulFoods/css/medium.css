@@ -8,7 +8,7 @@
         grid-column: 1/3;
     }
 
-    body div#body header a#hamburger {
+    body div#body header i#hamburger {
         display:none;
     }
     body div#body header div#navContainer {
