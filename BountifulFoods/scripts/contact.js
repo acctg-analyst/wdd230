@@ -30,67 +30,8 @@ let year = date.getFullYear();
 document.querySelector('#currentYear').innerHTML = `&copy;${year}`
 
 
-
-// Weather
-// URL--------------------------------------------------------------------------------------------------------
-// //
-
-
-const weatherURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Carlsbad%2C%20California?unitGroup=us&key=PFARUPTJZN58SQSPDJGRUH2G8&contentType=json";
-
-
-let humidity = document.querySelector('#humid span');
-let weatherDescription = document.querySelector('#conditions');
-let weatherIcon = document.querySelector('#weatherIcon');
-let day1 = document.querySelector('#temp1 span');
-let day2 = document.querySelector('#temp2 span');
-let day3 = document.querySelector('#temp3 span');
-
-
-const getWeather = async () => {
-    const response = await fetch(weatherURL);
-    const data = await response.json();
-    // console.log(data);
-
-    let temp = data.currentConditions.temp;
-    document.querySelector('#temp span').textContent = (temp).toFixed(1);
-
-    let image = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Monochrome/${data.currentConditions.icon}.svg`;
-    
-
-    humidity.textContent = data.currentConditions.humidity;
-    weatherDescription.textContent = data.currentConditions.conditions;
-    weatherIcon.src = image;
-    weatherIcon.alt = data.currentConditions.conditions + ' icon';
-    day1.textContent = data.days[1].temp;
-    day2.textContent = data.days[2].temp;
-    day3.textContent = data.days[3].temp;
-    
-
-
-};
-getWeather();
-
-// let drinks = localStorage.getItem(0) ? localStorage(0) : 0
-
-
-document.querySelector('button#reset').addEventListener('click',clear);
-
-function clear(event){
-    localStorage.clear();
-    location.reload();
-}
-
-
-if (!localStorage.getItem('drinks')) {
-    document.querySelector('#numDrinks').textContent = 0;
-}else{
-    let drinks = localStorage.getItem('drinks');
-    document.querySelector('#numDrinks').textContent = drinks;
-}
-
-
 // lazy loading
+
 
 //This is to select all of the images on the screen
 let images = document.querySelectorAll("[data-src]");

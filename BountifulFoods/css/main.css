@@ -48,11 +48,13 @@ body.openNav #body  {
     display:none;   
 }
 
-div.navSection.open a:not(:first-child):hover {
+div.navSection.open a:not(:first-child):not(:last-child):hover {
     background-color: #B2D2A4;
     color: #1a4314;
     border-radius: 1rem;
 }
+
+
 
 
 
@@ -102,7 +104,7 @@ header div:nth-child(2) a{
 }
 
 
-#logo{
+.logo{
     
     margin-top: 10px;
     width: 60px;
@@ -165,11 +167,12 @@ section {
     height: 300px;
     width: 300px;
     background-color: #1A4314;
-    box-shadow: 5px 5px 15px rgb(0,0,0,.6);
+    box-shadow: 10px 10px 15px rgba(0,0,0,.8),-10px 0px 15px rgba(0,0,0,.8);
     margin:15px auto;
     text-align: center;
     color: white;
     padding: 15px;
+    border-radius: .5em;
 }
 
 section h2 {
@@ -257,6 +260,168 @@ section#drinks button{
 
 section#drinks button:hover{
     cursor: pointer;
+}
+
+
+/* Start of the Fresh Page */
+main#form form#fullForm.collapsed {
+    display:none;
+}
+
+
+main#form h1 {
+    text-align: center;
+    color:#1A4314;
+}
+
+main#form form {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a4314;
+    width:80%;
+    margin:15px auto;
+    padding: 15px;
+    border-radius: .5em;
+    box-shadow: 10px 10px 15px rgba(0,0,0,.8),-10px 0px 15px rgba(0,0,0,.8);
+}
+
+main#form form fieldset{
+    margin-bottom: 1rem;
+    color: white;
+    border-color:white;
+    
+}
+
+main#form form label.top {
+    display: block;
+    padding-top: 1rem;
+    color:white;
+}
+
+form label.top input, form textarea {
+    display: block;
+    border-radius: 8px;
+    padding: .75rem;
+    width: 90%;
+    max-width: 20rem;
+    border: 0px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color:white;
+}
+
+main#form form fieldset label span{
+    color:rgb(161, 36, 36);
+}
+
+main#form form fieldset label span.fruit{
+    color:white;
+}
+
+form .submitBtn {
+    color: white;
+    background-color: rgb(161, 36, 36);
+    padding: .75rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: .75rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border:0px;
+}
+
+form .submitBtn:hover {
+    cursor: pointer;
+}
+
+main#form div#outputForm.collapsed{
+    display:none;
+}
+
+main#form div#outputForm p{
+    margin:0;
+    padding:0;
+}
+
+main#form div#outputForm {
+    background-color: #1a4314;
+    width:80%;
+    margin:15px auto;
+    padding: 15px;
+    border-radius: .5em;
+    box-shadow: 10px 10px 15px rgba(0,0,0,.8),-10px 0px 15px rgba(0,0,0,.8);
+}
+
+main#form div#outputForm div p {
+    color:white;
+    padding: 5px;
+    
+}
+
+main#form div#outputForm div p:first-child {
+    color:white;
+    font-size: 1.1em;
+    border-bottom: thin white solid;
+    margin: 15px;
+}
+
+/* Start of Contact Us Page */
+
+main#contact section{
+    height:auto;
+    width: 80%;
+}
+
+main#contact section#contactInfo p, main#contact section#hours p{
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    text-align: left;
+    display:block;
+    margin:0 auto;
+}
+
+main#contact section#contactInfo p:first-child,main#contact section#hours p {
+    font-size: 25px;
+    text-align: center;
+    border-bottom: thin white solid;
+    padding-bottom: 10px;
+}
+main#contact section#contactInfo p:nth-child(2){
+    padding-top: 30px;
+}
+main#contact section#contactInfo a {
+    font-size: 2em;
+    text-align: center;
+}
+
+main#contact iframe{
+    width:80vw;
+    height: 400px;
+    margin: 0 auto;
+    display:block;
+    padding-bottom: 20px;
+}
+
+main#contact section#hours table{
+    
+    margin:30px auto 0px auto;
+    border-collapse: collapse;
+}
+
+
+main#contact section#hours table tr td{
+    padding: 5px;
+    font-size: 1.1em;
+    border:thin solid white;
+    
+}
+main#contact section#hours table tr td:first-child{
+    text-align: left;
 }
 
 /* Start of the footer */
