@@ -391,7 +391,7 @@ main#dis_main section p {
 /* Looking at the join page only */
 
 main#join h1 {
-    
+    color: white;
     text-align: center;
 }
 
