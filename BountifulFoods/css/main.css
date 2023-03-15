@@ -42,6 +42,14 @@ div.navSection.open a{
 
 div.navSection.open .fa-times {
     font-size: 2rem;
+    display:block;
+    margin:0 auto;
+    width: 80vw;
+    padding: 25px;
+}
+
+div.navSection.open .fa-times:hover {
+    cursor: pointer;
 }
 
 body.openNav #body  {
@@ -97,10 +105,14 @@ header div:nth-child(2){
     font-size: 32px;
 }
 
-header div:nth-child(2) a{
+header div:nth-child(2) i{
     margin: auto 0;
     font-size: 32px;
     padding-right: 40px;
+}
+
+header div:nth-child(2) i:hover{
+    cursor: pointer;
 }
 
 
@@ -314,7 +326,7 @@ form label.sbs {
 }
 
 main#form form fieldset label span{
-    color:rgb(161, 36, 36);
+    color:white;
 }
 
 main#form form fieldset label span.fruit{
