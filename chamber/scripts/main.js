@@ -66,10 +66,10 @@ hamburger.addEventListener('click', () => {
         a4.textContent = "Join";
         navBar.appendChild(a4);
 
-        const a5 = document.createElement('a');
-        a5.setAttribute("href", "#");
-        a5.textContent = "Contact";
-        navBar.appendChild(a5);
+        // const a5 = document.createElement('a');
+        // a5.setAttribute("href", "#");
+        // a5.textContent = "Contact";
+        // navBar.appendChild(a5);
 
     }
 
@@ -107,10 +107,10 @@ function reportWindowSize() {
         a4.textContent = "Join";
         navBar.appendChild(a4);
 
-        const a5 = document.createElement('a');
-        a5.setAttribute("href", "#");
-        a5.textContent = "Contact";
-        navBar.appendChild(a5);
+        // const a5 = document.createElement('a');
+        // a5.setAttribute("href", "#");
+        // a5.textContent = "Contact";
+        // navBar.appendChild(a5);
     }
     else if (window.innerWidth < 956 && document.querySelector('#navContainer').classList.contains('on') && document.querySelector('#navContainer').classList.contains('large')) {
         document.querySelector('#navContainer').classList.toggle('on');

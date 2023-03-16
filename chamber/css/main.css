@@ -471,6 +471,8 @@ main#join .membership{
 main#thanks {
     display: flex;
     flex-direction: column;
+    margin: 150px 0 500px 0;
+    
 }
 
 main#thanks h1, main#thanks p {
